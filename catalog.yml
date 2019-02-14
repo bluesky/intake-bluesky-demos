@@ -1,0 +1,15 @@
+plugins:
+  source:
+    - module: intake_bluesky
+sources:
+  xyz:                                                                          
+    description: Some imaginary beamline
+    driver: intake_bluesky.mongo_layout1.BlueskyMongoCatalog
+    container: catalog
+    args:
+      metadatastore_db: mongodb://localhost:27017/mds
+      asset_registry_db: mongodb://localhost:27017/assets
+      handler_registry:
+        NPY_SEQ: ophyd.sim.NumpySeqHandler
+    metadata:
+      beamline: "00-ID"

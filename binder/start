@@ -1,0 +1,6 @@
+#!/bin/bash
+DIR=`dirname "\$0"`
+
+[ ! -e /tmp/supervisor.sock ] && supervisord -c $DIR/../supervisor/supervisord.conf
+
+exec "$@"
