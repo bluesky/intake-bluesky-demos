@@ -1,4 +1,4 @@
-from mongobox import MongoBox
+from pymongo import MongoClient
 from bluesky.callbacks.zmq import RemoteDispatcher
 from suitcase.mongo_layout1 import Serializer
 
@@ -7,6 +7,7 @@ from suitcase.mongo_layout1 import Serializer
 
 dispatcher = RemoteDispatcher('localhost:5578')
 
+client = MongoClient('localhost:27017')
 serializer = Serializer(client['mds'], client['assets'])
 print(client.address)
 dispatcher.subscribe(serializer)
