@@ -1,7 +1,7 @@
 event-model >=1.8.0rc3
 bluesky
 caproto
-intake-bluesky >=0.1.0a1
+intake-bluesky >=0.1.0a2
 ipympl
 matplotlib
 mongobox
