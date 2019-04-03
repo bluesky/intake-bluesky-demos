@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 from bluesky.callbacks.zmq import RemoteDispatcher
-from suitcase.mongo_layout1 import Serializer
+from suitcase.mongo_normalized import Serializer
 
 # This listens to a lightweight (0MQ-based) message bus for Documents
 # and inserts them into MongoDB.
