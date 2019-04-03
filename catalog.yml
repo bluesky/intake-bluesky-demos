@@ -4,7 +4,7 @@ plugins:
 sources:
   xyz:                                                                          
     description: Some imaginary beamline
-    driver: intake_bluesky.mongo_layout1.BlueskyMongoCatalog
+    driver: intake_bluesky.mongo_normalized.BlueskyMongoCatalog
     container: catalog
     args:
       metadatastore_db: mongodb://localhost:27017/mds
