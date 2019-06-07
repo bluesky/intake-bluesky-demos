@@ -1,7 +1,7 @@
 event-model >=1.8.0rc3
 bluesky
 caproto
-intake-bluesky >=0.1.0a3
+intake-bluesky >=0.1.0a8
 ipympl
 matplotlib
 mongobox
@@ -9,5 +9,6 @@ mongoquery
 ophyd
 suitcase-jsonl >=0.1.0b2
 suitcase-mongo >=0.1.0b5
+suitcase-msgpack >=0.2.2
 suitcase-tiff
 tornado <5
